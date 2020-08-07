@@ -1,0 +1,12 @@
+option = raw_input("Enter C for Circle or T for Triangle: ")
+if option[0] == 'C':
+  radius = float(raw_input("Enter radius: "))
+  area = 3.14159*radius**2
+elif option[0] == 'T':
+  base = float(raw_input("Enter base: "))
+  height = float(raw_input("Enter height: "))
+  area = 0.5*base*height
+else:
+  print "You have entered an invalid shape"
+print "The area is %f" % area
+print "program is exiting"
